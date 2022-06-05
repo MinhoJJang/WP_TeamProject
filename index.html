@@ -9,16 +9,8 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
 
-    <script language="JavaScript">
-  
-    function random(n) {
-      return (Math.floor(Math.random()*100000)%4);
-    }
-
-    </script>
-
   </head>
-  <body class="is-preload">
+  <body class="is-preload"onload="showImage()" >
     <div id="wrapper">
       <header id="header">
         <div class="content">
@@ -32,9 +24,9 @@
         </div>
         <nav>
           <ul>
-            <li><a href="property_01.html">National Treasures</a></li>
-            <li><a href="property_02.html">Cultural Heritage</a></li>
-            <li><a href="location.html">Location</a></li>
+            <li><a href="National Treasure.html">National Treasures</a></li>
+            <li><a href="Cultural Heritage.html">Cultural Heritage</a></li>
+            <li><a href="Historical Site.html">Historical Site</a></li>
           </ul>
         </nav>
       </header>
@@ -46,13 +38,12 @@
     </div>
 
     <!-- BG -->
-    <div id="bg">
-      <script language="JavaScript">
-      document.write('<img src="images/picture'+random(4)+'.jpg" />' );
-      </script>
+    <div id="bg" >
+ <img id = "image_id" src = "images/picture0.jpg"> 
     </div>
 
     <!-- Scripts -->
+    <script src="assets/js/showImage.js"></script> 
     <script src="assets/js/jquery.min.js"></script> 
     <script src="assets/js/breakpoints.min.js"></script> 
     <script src="assets/js/main.js"></script>
