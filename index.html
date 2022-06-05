@@ -8,13 +8,19 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+
+    <script language="JavaScript">
+  
+    function random(n) {
+      return (Math.floor(Math.random()*100000)%4);
+    }
+
+    </script>
+
   </head>
   <body class="is-preload">
     <div id="wrapper">
       <header id="header">
-        <div class="logo">
-          <span class="icon fa-gem"></span>
-        </div> 
         <div class="content">
           <div class="inner">
             <h1>Korean Cultural Properties</h1>
@@ -27,7 +33,7 @@
         <nav>
           <ul>
             <li><a href="property_01.html">National Treasures</a></li>
-            <li><a href="property_02.html">Treasures</a></li>
+            <li><a href="property_02.html">Cultural Heritage</a></li>
             <li><a href="location.html">Location</a></li>
           </ul>
         </nav>
@@ -40,7 +46,11 @@
     </div>
 
     <!-- BG -->
-    <div id="bg"></div>
+    <div id="bg">
+      <script language="JavaScript">
+      document.write('<img src="images/picture'+random(4)+'.jpg" />' );
+      </script>
+    </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script> 
